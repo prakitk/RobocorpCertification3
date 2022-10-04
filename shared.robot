@@ -1,7 +1,11 @@
 *** Settings ***
-Documentation       Inhuman Insurance, Inc. Artifucual Intelligence System robot
+Documentation       Inhuman Insurance, Inc. Artificial Intelligence System robot.
+...                 Shared settings and code.
+
+Library             RPA.Robocorp.WorkItems
+Library             RPA.JSON
+Library             RPA.HTTP
 
 
-*** Tasks ***
-Produce traffic data work items
-    Log    Done.
+*** Variables ***
+${WORK_ITEM_NAME}=      traffic_data
